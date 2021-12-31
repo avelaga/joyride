@@ -1,5 +1,4 @@
 import './App.css';
-import MediaQuery from 'react-responsive';
 import { Button, SideNav } from './lib/index.js';
 
 function App() {
@@ -45,8 +44,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Button /> */}
-      <SideNav activeLink={"PHOTO"} mobile={false} title={"ABHI VELAGA"} subtitle={"austin, tx."} links={links}/>
+      <SideNav title={"ABHI VELAGA"} subtitle={"austin, tx."} links={links}/>
+      <Button />
     </div>
   );
 }

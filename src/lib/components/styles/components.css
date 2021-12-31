@@ -25,6 +25,24 @@ a {
   src: local('Berthold-Akzidenz-Grotesk'), url(../fonts/Berthold-Akzidenz-Grotesk-BE-Li-Tall-Normal.otf) format('opentype');
 }
 
+.sidenav {
+  width: 250px;
+  height: 0;
+  padding: 0px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  text-align: left;
+}
+
 .appear {
   animation-name: appear;
   animation-duration: 2.5s;
@@ -45,25 +63,6 @@ a {
   margin-bottom: 20px;
   font-size: 10px;
   letter-spacing: 4px;
-}
-
-.sidenav {
-  width: 250px;
-  height: 0;
-  padding: 0px;
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  z-index: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  animation-name: appear;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-  
-  text-align: left;
 }
 
 .link {
@@ -127,7 +126,6 @@ a {
 
 .nav-back {
   background-color: none;
-  
 }
 
 @media (max-width: 500px) {

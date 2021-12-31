@@ -8,6 +8,10 @@
     "components",
     "ui"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avelaga/joyride.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
