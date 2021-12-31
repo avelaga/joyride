@@ -1,7 +1,7 @@
 import './App.css';
-import { Button, SideNav } from './lib/index.js';
+import { SideNav } from './lib/index.js';
 
-function App() {
+export default function App() {
 
   const links = {
     "internal" : [
@@ -40,14 +40,11 @@ function App() {
         "title" : "CONTACT"
       }
     ]
-  }
+  };
 
   return (
     <div className="App">
       <SideNav title={"ABHI VELAGA"} subtitle={"austin, tx."} links={links}/>
-      <Button />
     </div>
-  );
-}
-
-export default App;
+  )
+};
