@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berthold-Akzidenz-Grotesk'), url(../fonts/Berthold-Akzidenz-Grotesk-BE-Li.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Berthold-Akzidenz-Grotesk-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berthold-Akzidenz-Grotesk'), url(../fonts/Berthold-Akzidenz-Grotesk-BE-Li-Tall-Normal.otf) format('opentype');
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.nav-title {
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+  line-height: 40px;
+}
+
+.subtitle {
+  width: 100%;
+  height: 15px;
+  color: grey;
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.sidenav {
+  width: 250px;
+  height: 0;
+  padding: 0px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  animation-name: appear;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  
+  text-align: left;
+}
+
+.link {
+  color: rgb(0, 255, 255);
+  height: 20px;
+  width: 220px;
+  position: relative;
+  animation-name: offText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
+.link-color {
+  background-color: rgb(204, 5, 204);
+  width: 0;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transition: width .7s;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.link-text {
+  width: 160px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.link:hover .link-color {
+  width: 160px;
+}
+
+.link:hover {
+  animation-name: overText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.external-link {
+  color: rgb(180, 180, 180);
+  height: 15px;
+  width: 220px;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 10px;
+  animation-name: offExternalText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.external-link:hover {
+  animation-name: overExternalText;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.nav-back {
+  background-color: none;
+  
+}
+
+@media (max-width: 500px) {
+  .nav-title {
+    font-size: 45px;
+    line-height: 40px;
+    width: 50vw;
+  }
+  .sidenav {
+    top: 10px;
+    left: 10px;
+  }
+  .link {
+    height: 25px;
+    font-size: 20px;
+  }
+  .link-color {
+    height: 25px;
+  }
+  .link-text {
+    height: 25px;
+  }
+  .external-link {
+    height: 20px;
+    font-size: 15px;
+  }
+  .subtitle {
+    height: 18px;
+    font-size: 13px;
+  }
+  .nav-back {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    animation-name: hideBack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .header-back {
+    width: 100vw;
+    height: 118px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes hideBack {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.nav-header {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.menu-button {
+  font-size: 30px;
+  color: rgb(0, 255, 255);
+  line-height: 24px;
+}
+
+@keyframes overExternalText {
+  from {
+    color: rgb(180, 180, 180)
+  }
+  to {
+    color: white
+  }
+}
+
+@keyframes offExternalText {
+  from {
+    color: white
+  }
+  to {
+    color: rgb(180, 180, 180)
+  }
+}
+
+@keyframes overText {
+  from {
+    color: rgb(0, 255, 255)
+  }
+  to {
+    color: white
+  }
+}
+
+@keyframes offText {
+  from {
+    color: white
+  }
+  to {
+    color: rgb(0, 255, 255)
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
