@@ -59,3 +59,21 @@ export default function App() {
 };
 
 ```
+
+## square button
+<img src="https://media.giphy.com/media/JJNoyp1aoMiIAGIwXW/giphy.gif" width="500" height="500" />
+
+a simple button
+
+*usage:*
+```jsx
+import { SquareButton } from 'joyride';
+
+export default function App() {
+	return (
+		<div>
+			<SquareButton text={"click me?"} onClick={() => console.log("i was indeed clicked")} />
+		</div>
+	)
+};
+```

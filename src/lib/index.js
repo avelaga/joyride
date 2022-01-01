@@ -1,4 +1,4 @@
-import Button from './components/Button';
+import SquareButton from './components/SquareButton';
 import SideNav from './components/SideNav';
 
-export { Button, SideNav };
+export { SquareButton, SideNav };

@@ -1,5 +1,5 @@
 import './App.css';
-import { SideNav } from './lib/index.js';
+import { SideNav, SquareButton } from './lib/index.js';
 
 export default function App() {
 
@@ -44,6 +44,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <SquareButton text={"click me?"} onClick={() => console.log("yES i work!! !")} />
       <SideNav title={"ABHI VELAGA"} subtitle={"austin, tx."} links={links}/>
     </div>
   )
