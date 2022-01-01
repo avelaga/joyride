@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "author": "abhi velaga",
   "private": false,
+  "license": "MIT",
   "keywords": [
     "react",
     "components",

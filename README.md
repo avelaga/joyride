@@ -7,7 +7,7 @@
 an animating, mobile responsive navigation bar that's pinned to the top left of the desktop screen and renders two sets of differently styled links for use as page navigation links and external links
 
 *usage:*
-```
+```jsx
 import { SideNav } from 'joyride';
 
 export default function App() {
