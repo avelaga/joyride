@@ -61,7 +61,7 @@ export default function App() {
 ```
 
 ## square button
-<img src="https://media.giphy.com/media/JJNoyp1aoMiIAGIwXW/giphy.gif" width="500" height="500" />
+<img src="https://media.giphy.com/media/JJNoyp1aoMiIAGIwXW/giphy.gif" />
 
 a simple button
 
