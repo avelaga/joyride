@@ -1,7 +1,9 @@
 # joyride
  a react ui component library by abhi velaga
 
-## Side Navigation Bar
+## side navigation bar
+<img src="https://media.giphy.com/media/YbFaD8r0EVXImIAa0B/giphy.gif" width="500" height="500" />
+
 an animating, mobile responsive navigation bar that's pinned to the top left of the desktop screen and renders two sets of differently styled links for use as page navigation links and external links
 
 *usage:*
